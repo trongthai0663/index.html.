@@ -336,3 +336,247 @@
     </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeGym Career - Giải pháp Việc làm & Sự nghiệp IT</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    
+    <style>
+        /* Tùy chỉnh màu sắc thương hiệu CodeGym Material Design */
+        :root {
+            --codegym-blue: #0056b3;
+            --codegym-accent: #ff6f00;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.16);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+            color: white;
+            padding: 90px 0 60px 0;
+        }
+
+        .card-custom {
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5deg);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+        }
+
+        .btn-accent {
+            background-color: var(--codegym-accent) !important;
+            color: white !important;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: #1565c0;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background-color: var(--codegym-accent);
+            display: block;
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark blue darken-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><strong>CODEGYM CAREER</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#hero">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về CodeGym Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Dịch vụ &amp; Giải pháp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (JUMBOTRON) -->
+    <section id="hero" class="hero-section text-center text-lg-left">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4">
+                    <h1 class="display-4 font-weight-bold">Bứt Phá Sự Nghiệp Lập Trình Viên</h1>
+                    <p class="lead my-4">Kết nối ứng viên tài năng với hơn 500+ doanh nghiệp công nghệ hàng đầu. Đào tạo theo mô hình Bootcamp thực chiến, cam kết việc làm.</p>
+                    <a href="#contact" class="btn btn-accent btn-rounded btn-lg m-0 waves-effect waves-light">
+                        <i class="fas fa-paper-plane mr-2"></i>Đăng Ký Tư Vấn ngay
+                    </a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new1.png" alt="CodeGym Career" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VỀ CODEGYM CAREER -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Giải Pháp Việc Làm Toàn Diện</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card card-custom h-100 z-depth-1 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-graduation-cap fa-3x blue-text mb-3"></i>
+                            <h4 class="card-title font-weight-bold">Đào Tạo Thực Chiến</h4>
+                            <p class="card-text text-muted">Chương trình học bám sát nhu cầu tuyển dụng thực tế của doanh nghiệp, thực hành 80% thời lượng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card card-custom h-100 z-depth-1 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-handshake fa-3x orange-text mb-3"></i>
+                            <h4 class="card-title font-weight-bold">Kết Nối Doanh Nghiệp</h4>
+                            <p class="card-text text-muted">Mạng lưới đối tác hơn 500+ công ty IT hàng đầu, mang tới vô số cơ hội việc làm hấp dẫn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card card-custom h-100 z-depth-1 p-3">
+                        <div class="card-body">
+                            <i class="fas fa-user-tie fa-3x green-text mb-3"></i>
+                            <h4 class="card-title font-weight-bold">Đồng Hành Sự Nghiệp</h4>
+                            <p class="card-text text-muted">Hỗ trợ viết CV, luyện phỏng vấn 1-1 và định hướng con đường phát triển sự nghiệp lâu dài.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DỊCH VỤ / TÍNH NĂNG -->
+    <section id="features" class="py-5 white">
+        <div class="container">
+            <h2 class="text-center section-title">Dành Cho Ai?</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="list-group list-group-flush z-depth-1 rounded">
+                        <div class="list-group-item active blue darken-2">
+                            <h5 class="mb-0 font-weight-bold"><i class="fas fa-check-circle mr-2"></i>Dành cho Sinh viên &amp; Người chuyển ngành</h5>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="mb-0">Học từ số 0, nắm vững kiến thức lập trình nền tảng và chuyên sâu trong thời gian ngắn.</p>
+                        </div>
+                        <div class="list-group-item active blue darken-2">
+                            <h5 class="mb-0 font-weight-bold"><i class="fas fa-building mr-2"></i>Dành cho Doanh nghiệp Tuyển dụng</h5>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="mb-0">Tiếp cận nguồn nhân lực lập trình viên đã qua kiểm định chất lượng, sẵn sàng chiến đấu ngay.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 text-center">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" class="img-fluid rounded z-depth-2" alt="Thực hành Lập trình">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM ĐĂNG KÝ (CALL TO ACTION) -->
+    <section id="contact" class="py-5 grey lighten-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card z-depth-2">
+                        <div class="card-body p-4">
+                            <h3 class="text-center font-weight-bold blue-text mb-4">Đăng Ký Nhận Tư Vấn</h3>
+                            <form>
+                                <div class="md-form">
+                                    <i class="fas fa-user prefix grey-text"></i>
+                                    <input type="text" id="name" class="form-control">
+                                    <label for="name">Họ và tên của bạn</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-envelope prefix grey-text"></i>
+                                    <input type="email" id="email" class="form-control">
+                                    <label for="email">Địa chỉ Email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fas fa-phone prefix grey-text"></i>
+                                    <input type="text" id="phone" class="form-control">
+                                    <label for="phone">Số điện thoại</label>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary btn-block btn-rounded waves-effect waves-light" type="button">Gửi Đăng Ký</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small blue darken-3 pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase font-weight-bold">CodeGym Career</h5>
+                    <p>Hệ thống đào tạo lập trình hiện đại và kết nối việc làm IT hàng đầu Việt Nam.</p>
+                </div>
+                <div class="col-md-6 mb-md-0 mb-3 text-md-right">
+                    <h5 class="text-uppercase font-weight-bold">Kết nối với chúng tôi</h5>
+                    <a href="#" class="btn-floating btn-sm btn-fb waves-effect waves-light"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn-floating btn-sm btn-tw waves-effect waves-light"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="btn-floating btn-sm btn-li waves-effect waves-light"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 rgba-black-light">
+            © 2026 CodeGym Career - All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JQuery, Popper.js, Bootstrap & MDB JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>
