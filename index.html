@@ -93,3 +93,81 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành phối màu đơn tông (Monochromatic)</title>
+    <style>
+        /* Bước 2 & 6: Màu nền toàn trang và màu chữ đen */
+        body {
+            background-color: #00BFF2; /* Bậc 4 */
+            color: #000000;            /* Chữ màu đen */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Khung chứa giao diện */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Bước 3: Thay đổi màu nền phần ON SALE / PREVIEW */
+        .badge-sale {
+            background-color: #00ADEE; /* Bậc 1 */
+            color: #ffffff;
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Bước 4: Đổi màu nền phần nội dung */
+        .content-box {
+            background-color: #8DD7F7; /* Bậc 7 */
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-box h2 {
+            margin-top: 0;
+        }
+
+        /* Bước 5: Đổi màu nền phần footer */
+        footer {
+            background-color: #C6E9FA; /* Bậc 9 */
+            padding: 15px;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Phần ON SALE / PREVIEW -->
+        <div class="badge-sale">ON SALE</div>
+
+        <!-- Khung nội dung chính -->
+        <div class="content-box">
+            <h2>Sản phẩm nổi bật</h2>
+            <p>Trang web sử dụng nguyên tắc phối màu đơn tông (Monochromatic Palette) từ màu chủ đạo logo (#00ADEE).</p>
+            <p>Việc giảm sắc độ giúp trang web có bố cục hài hòa, dễ nhìn và giữ được sự tập trung cho người xem.</p>
+        </div>
+
+        <!-- Phần Footer -->
+        <footer>
+            <p>© 2026 - Bản quyền thuộc về Trang web của bạn | Phối màu đơn tông</p>
+        </footer>
+    </div>
+
+</body>
+</html>
