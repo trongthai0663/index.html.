@@ -171,3 +171,168 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phối màu Newsletter - Trello Sample</title>
+    <!-- Liên kết Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* PHIÊN BẢN 1: BỘ MÀU CHUYÊN NGHIỆP (Trạng thái mặc định) */
+        :root {
+            --primary-color: #0065FF;       /* Xanh dương Trello */
+            --secondary-color: #091E42;     /* Xanh đen đậm */
+            --accent-color: #00C49F;        /* Xanh ngọc điểm nhấn */
+            --bg-light: #F4F5F7;            /* Nền xám nhạt */
+            --text-color: #172B4D;          /* Màu chữ chính */
+            --card-bg: #FFFFFF;             /* Nền thẻ */
+        }
+
+        /* PHIÊN BẢN 2: BỘ MÀU SÁNG TẠO / ẤM ÁP (Khi kích hoạt class .theme-version-2) */
+        body.theme-version-2 {
+            --primary-color: #FF5630;       /* Cam đỏ năng động */
+            --secondary-color: #253858;     /* Xanh xám trầm */
+            --accent-color: #FFAB00;        /* Vàng sáng điểm nhấn */
+            --bg-light: #FFF8F6;            /* Nền hồng kem nhạt */
+            --text-color: #253858;          /* Màu chữ */
+            --card-bg: #FFFFFF;             /* Nền thẻ */
+        }
+
+        /* Áp dụng các biến CSS vào giao diện */
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .primary-bg { 
+            background-color: var(--primary-color) !important; 
+        }
+
+        .secondary-bg { 
+            background-color: var(--secondary-color) !important; 
+        }
+
+        .accent-bg { 
+            background-color: var(--accent-color) !important; 
+        }
+
+        .text-primary-color { 
+            color: var(--primary-color) !important; 
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-custom {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            border: none;
+            font-weight: 600;
+            padding: 10px 24px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-primary-custom:hover {
+            opacity: 0.9;
+            color: #FFFFFF;
+        }
+
+        /* Khung chuyển đổi giao diện thử nghiệm */
+        .theme-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Nút chuyển đổi bộ màu nhanh -->
+    <div class="theme-switcher text-center">
+        <small class="d-block mb-2 fw-bold text-dark">Chuyển đổi bộ màu (Adobe Color):</small>
+        <button class="btn btn-sm btn-outline-primary active" id="btn-v1" onclick="switchTheme(1)">
+            Phiên bản 1 (Xanh)
+        </button>
+        <button class="btn btn-sm btn-outline-danger" id="btn-v2" onclick="switchTheme(2)">
+            Phiên bản 2 (Cam)
+        </button>
+    </div>
+
+    <div class="container py-5" style="max-width: 800px;">
+        <!-- Header -->
+        <header class="text-center mb-4 p-5 primary-bg text-white rounded-3 shadow-sm">
+            <h1 class="fw-bold">Trello Newsletter</h1>
+            <p class="lead mb-0">Cập nhật tính năng &amp; Mẹo quản lý công việc hiệu quả</p>
+        </header>
+
+        <!-- Thẻ bài viết chính -->
+        <section class="card mb-4 rounded-3">
+            <div class="card-body p-4">
+                <span class="badge accent-bg text-white mb-2 fs-6">Nổi bật</span>
+                <h2 class="card-title text-primary-color mb-3">Chào mừng bạn đến với bản tin tháng này!</h2>
+                <p class="card-text fs-5">
+                    Chúng tôi vừa ra mắt bộ giao diện mới giúp tối ưu hóa không gian làm việc nhóm của bạn. Hãy trải nghiệm ngay những cải tiến về màu sắc và hiệu năng.
+                </p>
+                <a href="#" class="btn btn-primary-custom rounded-pill">Khám phá ngay</a>
+            </div>
+        </section>
+
+        <!-- Các thẻ tính năng phụ -->
+        <section class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 secondary-bg text-white rounded-3">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h4">Tính năng Power-Ups</h3>
+                        <p class="card-text">Tích hợp công cụ làm việc yêu thích của bạn trực tiếp vào các thẻ Trello một cách dễ dàng.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card h-100 accent-bg text-white rounded-3">
+                    <div class="card-body p-4">
+                        <h3 class="card-title h4">Tự động hóa Butler</h3>
+                        <p class="card-text">Tự động hóa các công việc lặp đi lặp lại hàng ngày để tiết kiệm thời gian cho nhóm của bạn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-5 p-4 secondary-bg text-white rounded-3">
+            <p class="mb-0">&copy; 2026 Trello Newsletter. Mọi quyền được bảo lưu.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript chuyển đổi bộ màu -->
+    <script>
+        function switchTheme(version) {
+            const body = document.body;
+            const btnV1 = document.getElementById('btn-v1');
+            const btnV2 = document.getElementById('btn-v2');
+
+            if (version === 2) {
+                body.classList.add('theme-version-2');
+                btnV2.classList.add('active');
+                btnV1.classList.remove('active');
+            } else {
+                body.classList.remove('theme-version-2');
+                btnV1.classList.add('active');
+                btnV2.classList.remove('active');
+            }
+        }
+    </script>
+</body>
+</html>
